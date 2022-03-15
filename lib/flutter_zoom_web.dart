@@ -26,7 +26,7 @@ class ZoomViewWeb extends ZoomPlatform {
     var susmap = convertToDart(sus);
     print(susmap);
 
-    ZoomMtg.i18n.load(options.language);
+    // ZoomMtg.i18n.load(options.language);
     ZoomMtg.preLoadWasm();
     ZoomMtg.prepareWebSDK();
     ZoomMtg.init(InitParams(
