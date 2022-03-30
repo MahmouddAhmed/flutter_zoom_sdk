@@ -30,6 +30,7 @@ class ZoomOptions {
   bool? disableVOIP; //--for web
   bool? disableReport; //--for web
   List<String>? meetingInfo; //--for web
+  String? leaveUrl;
 
   ZoomOptions(
       {required this.domain,
@@ -72,7 +73,8 @@ class ZoomOptions {
         'dc',
         'enctype',
         'report'
-      ]});
+      ],
+      this.leaveUrl});
 }
 
 //Basic Zoom Meeting Options required for plugin (WEB, iOS, Android)
